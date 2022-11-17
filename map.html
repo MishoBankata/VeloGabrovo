@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> ВелоГаброво </title>
+        <link rel="stylesheet" href="assets/picnic.css">
+    </head>
+
+    <body>
+		<header>
+			<nav class="demo">
+				<a href="index.html" class="brand">
+					<img class="logo" src="assets/logoto-removebg-preview.png" />
+					<span>Вело-Габрово</span>
+				</a>
+
+				<!-- responsive-->
+				<input id="bmenub" type="checkbox" class="show">
+				<label for="bmenub" class="burger pseudo button">menu</label>
+
+				<div class="menu">
+				<a href="index.html" class="button" style="background-color:red">Начало</a>
+				<a href="map.html" class="button">Карта</a>
+				</div>
+			</nav>
+			<br>
+			<h1>Карта</h1>
+        </header>
+		
+		<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Older_woman_with_flowers_protected_bike_lane_boston.jpg" width= "500" height="auto" style="display:none">
+		
+		<script>
+        function show() {
+ 
+            document.getElementById('image')
+                    .style.display = "block";
+ 
+            document.getElementById('btnID')
+                    .style.display = "none";
+        }
+    </script>
+		
+		<div>
+			<label class="stack">
+				<input name="stack" type="radio">
+				<span class="button toggle" onclick="show()" id="btnID">Главна артерия</span>
+			</label>
+			<label class="stack">
+				<input name="stack" type="radio">
+				<span class="button toggle" onclick="show()" id="btnID">2ра част</span>
+			</label>
+			<label class="stack">
+				<input name="stack" type="radio">
+				<span class="button toggle">3та част</span>
+			</label>
+			<label class="stack">
+				<input name="stack" type="radio">
+				<span class="button toggle">Малки улички</span>
+			</label>
+		</div>
+
+		
+    </body>
+</html>
