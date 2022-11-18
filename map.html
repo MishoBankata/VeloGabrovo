@@ -19,12 +19,12 @@
 				<label for="bmenub" class="burger pseudo button">menu</label>
 
 				<div class="menu">
-				<a href="index.html" class="button" style="background-color:red">Начало</a>
+				<a href="index.html" class="button" style="background-color:green">Начало</a>
 				<a href="map.html" class="button">Карта</a>
 				</div>
 			</nav>
 			<br>
-			<h1>Карта</h1>
+			<h1>Карта на потенциалните маршрути на велоалеи в Габрово</h1>
         </header>
 		
 		<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Older_woman_with_flowers_protected_bike_lane_boston.jpg" width= "500" height="auto" style="display:none">
@@ -40,13 +40,58 @@
         }
     </script>
 		
-		
-			<span class="button stack radiobutton" onclick="show()">Главна артерия</span>
-			<span class="button stack radiobutton" onclick="show()">2ра част</span>
-			<span class="button stack radiobutton" onclick="show()">3та част</span>
-			<span class="button stack radiobutton" onclick="show()">Малки улички</span>
-		
+		<!-- 
+			<span class="button stack" onclick="show()">Главен маршрут</span>
+			<span class="button stack" onclick="show()">Централен маршрут</span>
+			<span class="button stack" onclick="show()">Североизточен маршрут</span>
+			<span class="button stack" onclick="show()">Южен маршрут</span>
+			<span class="button stack" onclick="show()">Северозападен маршрут</span>
+			<span class="button stack" onclick="show()">Централен Парк</span>
+-->
 
+			<div class="tabs six">
+  				<input id='tab-1' type='radio' name='tabgroupB' checked />
+  					<label class="button toggle" for="tab-1">Главен маршрут</label>
+  				<input id='tab-2' type='radio' name='tabgroupB'>
+  					<label class="button toggle" for="tab-2">Централен маршрут</label>
+ 				<input id='tab-3' type='radio' name='tabgroupB'>
+  					<label class="button toggle" for="tab-3">Североизточен маршрут</label>
+				<input id='tab-4' type='radio' name='tabgroupB'>
+  					<label class="button toggle" for="tab-4">Южен маршрут</label>
+				<input id='tab-5' type='radio' name='tabgroupB'>
+  					<label class="button toggle" for="tab-5">Северозападен маршрут</label>
+				<input id='tab-6' type='radio' name='tabgroupB'>
+  					<label class="button toggle" for="tab-6">Централен Парк</label>
+
+  				<div class="row">
+
+    					<div>
+      						<img src="assets/glaven.png" style="width: 700px; height:auto">
+    					</div>
+    					<div>
+      						<img src="assets/centralen.png" style="width: 700px; height:auto">
+    					</div>
+					<div>
+      						<img src="assets/severoiztok.png" style="width: 700px; height:auto">
+    					</div>
+					<div>
+      						<img src="assets/ujen.png" style="width: 700px; height:auto">
+    					</div>
+					<div>
+      						<img src="assets/severozapad.png" style="width: 700px; height:auto">
+    					</div>
+					<div>
+      						<img src="assets/park.png" style="width: 700px; height:auto">
+    					</div>
+  				</div>
+			</div>
+
+<br><br>
+			<h2>Цялата мрежа</h2>
+			<div>
+				<img id="image" src="assets/BLN.png" style="width: 675px; height:auto">
+				<img id="image" src="assets/BLNMap.png" style="width: 675px; height:auto">
+			</div>
 		
     </body>
 </html>
