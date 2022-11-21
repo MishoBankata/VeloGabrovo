@@ -17,7 +17,7 @@
 				<!-- responsive-->
 				<input id="bmenub" type="checkbox" class="show">
 				<label for="bmenub" class="burger pseudo button">menu</label>
-
+<!--
 				<div class="menu">
 				<button onclick="document.getElementById('image1').scrollIntoView();">Главен маршрут</button>
 				<button onclick="document.getElementById('image1').scrollIntoView();">Централен маршрут</button>
@@ -27,14 +27,14 @@
 				<button onclick="document.getElementById('image1').scrollIntoView();">Централен парк</button>
 				
 
-				</div>
+				</div> -->
 			</nav>
 			<br>
 			<h1>Карта на потенциалните маршрути на велоалеи в Габрово</h1>
         </header>
 		
 		<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Older_woman_with_flowers_protected_bike_lane_boston.jpg" width= "500" height="auto" style="display:none">
-		
+		<button onclick="topFunction()" id="stt" title="Go to top" style="display: none; position: fixed; background-color: red; bottom: 20px; right: 30px;">Top</button>
 		<script>
         function show() {
  
@@ -44,17 +44,37 @@
             document.getElementById('btnID')
                     .style.display = "none";
         }
+		
+		let mybutton = document.getElementById("stt");
+		
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				mybutton.style.display = "block";
+  			} else {
+				mybutton.style.display = "none";
+  			}
+		}
+		
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+  			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+		
     </script>
 		
 		
-			
-			<!-- <span class="button stack" onclick="show()">Централен маршрут</span>
-			<span class="button stack" onclick="show()">Североизточен маршрут</span>
-			<span class="button stack" onclick="show()">Южен маршрут</span>
-			<span class="button stack" onclick="show()">Северозападен маршрут</span>
-			<span class="button stack" onclick="show()">Централен Парк</span>
--->
+			<span class="button stack" onclick="document.getElementById('image1').scrollIntoView();">Главен маршрут</span>
+			<span class="button stack" onclick="document.getElementById('image2').scrollIntoView();">Централен маршрут</span>
+			<span class="button stack" onclick="document.getElementById('image3').scrollIntoView();">Североизточен маршрут</span>
+			<span class="button stack" onclick="document.getElementById('image4').scrollIntoView();">Южен маршрут</span>
+			<span class="button stack" onclick="document.getElementById('image5').scrollIntoView();">Северозападен маршрут</span>
+			<span class="button stack" onclick="document.getElementById('image6').scrollIntoView();">Централен Парк</span>
 
+			<br><br>
+
+<!--
 			<div class="tabs six">
   				<input id='tab-1' type='radio' name='tabgroupB' checked />
   					<label class="button toggle" for="tab-1">Главен маршрут</label>
@@ -97,7 +117,30 @@
 			<div>
 				<img id="image1" src="assets/BLN.png" style="width: 675px; height:auto">
 				<img id="image" src="assets/BLNMap.png" style="width: 675px; height:auto">
-			</div>
+			</div> -->
 		
+		<img id="image1" src="assets/glaven.png" style="width: 700px; height:auto">
+		<p>крайречен маршрут ор ЖП гарата до кв. Шиваров мост</p>
+		<br>
+		
+		<img id="image2" src="assets/centralen.png" style="width: 700px; height:auto">
+		<p>пръстен през центъра на града</p>
+		<br>
+		
+		<img id="image3" src="assets/severoiztok.png" style="width: 700px; height:auto">
+		<p>минаващ през кв. Колелото и достигащ Северната промишлена зона</p>
+		<br>
+		
+		<img id="image4" src="assets/ujen.png" style="width: 700px; height:auto">
+		<p>от кв. Шиваров мост до кв. Дядо Дянко</p>
+		<br>
+		
+		<img id="image5" src="assets/severozapad.png" style="width: 700px; height:auto">
+		<p>достигащ кв. Младост</p>
+		<br>
+		
+		<img id="image6" src="assets/park.png" style="width: 700px; height:auto">
+		<p>пътеки в Централен парк и околноста на ТУ Габрово и МБАЛ "д-р. Тота Венкова</p>
+		<br>
     </body>
 </html>
