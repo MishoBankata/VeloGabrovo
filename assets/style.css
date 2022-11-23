@@ -1,3 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+	background-color: #94ffef;
+}
+nav{
+	background-color: #5abfb0;
+}
