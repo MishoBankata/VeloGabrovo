@@ -42,44 +42,15 @@
 		
 		<img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Older_woman_with_flowers_protected_bike_lane_boston.jpg" width= "500" height="auto" style="display:none">
 		<button onclick="topFunction()" id="stt" title="Към началото на страницата" style="display: none; position: fixed; background-color: red; bottom: 20px; right: 30px;">Нагоре</button>
-		<script>
-        function show() {
- 
-            document.getElementById('image')
-                    .style.display = "block";
- 
-            document.getElementById('btnID')
-                    .style.display = "none";
-        }
 		
-		let mybutton = document.getElementById("stt");
-		
-		window.onscroll = function() {scrollFunction()};
-		
-		function scrollFunction() {
-			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-				mybutton.style.display = "block";
-  			} else {
-				mybutton.style.display = "none";
-  			}
-		}
-		
-		function topFunction() {
-			document.body.scrollTop = 0; // For Safari
-  			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-		
-    </script>
-		
-		
-			<span class="button stack" onclick="document.getElementById('image1').scrollIntoView();">Главен маршрут</span>
-			<span class="button stack" onclick="document.getElementById('image2').scrollIntoView();">Централен маршрут</span>
-			<span class="button stack" onclick="document.getElementById('image3').scrollIntoView();">Североизточен маршрут</span>
-			<span class="button stack" onclick="document.getElementById('image4').scrollIntoView();">Южен маршрут</span>
-			<span class="button stack" onclick="document.getElementById('image5').scrollIntoView();">Северозападен маршрут</span>
-			<span class="button stack" onclick="document.getElementById('image6').scrollIntoView();">Централен Парк</span>
-
-			<br><br>
+		<div class="galleryNavBar">
+			<span class="button stack" id="toImage1" onclick="scrollIntoImage(this.id)">Главен маршрут</span>
+			<span class="button stack" id="toImage2" onclick="scrollIntoImage(this.id)">Централен маршрут</span>
+			<span class="button stack" id="toImage3" onclick="scrollIntoImage(this.id)">Североизточен маршрут</span>
+			<span class="button stack" id="toImage4" onclick="scrollIntoImage(this.id)">Южен маршрут</span>
+			<span class="button stack" id="toImage5" onclick="scrollIntoImage(this.id)">Северозападен маршрут</span>
+			<span class="button stack" id="toImage6" onclick="scrollIntoImage(this.id)">Централен Парк</span>
+        </div>
 
 <!--
 			<div class="tabs six">
@@ -126,28 +97,26 @@
 				<img id="image" src="assets/BLNMap.png" style="width: 675px; height:auto">
 			</div> -->
 		
-		<img id="image1" src="assets/glaven.png" style="width: 700px; height:auto">
-		<p>крайречен маршрут ор ЖП гарата до кв. Шиваров мост</p>
-		<br>
+        <div class="flex two gallery">
+		  <img class="galleryImages" id="image1" src="assets/glaven.png">
+		  <p>крайречен маршрут ор ЖП гарата до кв. Шиваров мост</p>
 		
-		<img id="image2" src="assets/centralen.png" style="width: 700px; height:auto">
-		<p>пръстен през центъра на града</p>
-		<br>
+		  <img class="galleryImages" id="image2" src="assets/centralen.png">
+		  <p>пръстен през центъра на града</p>
 		
-		<img id="image3" src="assets/severoiztok.png" style="width: 700px; height:auto">
-		<p>минаващ през кв. Колелото и достигащ Северната промишлена зона</p>
-		<br>
+		  <img class="galleryImages" id="image3" src="assets/severoiztok.png">
+		  <p>минаващ през кв. Колелото и достигащ Северната промишлена зона</p>
 		
-		<img id="image4" src="assets/ujen.png" style="width: 700px; height:auto">
-		<p>от кв. Шиваров мост до кв. Дядо Дянко</p>
-		<br>
+		  <img class="galleryImages" id="image4" src="assets/ujen.png">
+		  <p>от кв. Шиваров мост до кв. Дядо Дянко</p>
 		
-		<img id="image5" src="assets/severozapad.png" style="width: 700px; height:auto">
-		<p>достигащ кв. Младост</p>
-		<br>
+		  <img class="galleryImages" id="image5" src="assets/severozapad.png">
+		  <p>достигащ кв. Младост</p>
 		
-		<img id="image6" src="assets/park.png" style="width: 700px; height:auto">
-		<p>пътеки в Централен парк и околноста на ТУ Габрово и МБАЛ "д-р. Тота Венкова</p>
-		<br>
+          <img class="galleryImages" id="image6" src="assets/park.png">
+		  <p>пътеки в Централен парк и околноста на ТУ Габрово и МБАЛ "д-р. Тота Венкова</p>
+        </div>
+        
+        <script src="assets/main.js"></script>
     </body>
 </html>

@@ -7,3 +7,20 @@ html {
 nav{
 	background-color: #5abfb0;
 }
+
+.galleryImages {
+    width: auto;
+    height:600px;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.galleryNavBar {
+    position: fixed;
+    width: 100%;
+}
+
+.gallery {
+    margin-top: 228px;
+}
