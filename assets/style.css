@@ -11,27 +11,34 @@ body {
     font-family: Onest;
     /*background-color: #94ffef;*/
 }
-nav {
+header nav {
     background-color: #5abfb0;
 }
 
-.galleryImages {
+/*класове извън picnic.css*/
+#gallerySideNavBar button {
+    display: none; 
+    position: fixed; 
+    background-color: red;
+    width: 18%;
+    text-align: right;
+}
+
+#galleryNavBar {
+    width: 100%;
+}
+
+div.gallery {
+    margin-top: 228px;
+}
+
+div.gallery img {
     width: auto;
     height:600px;
     margin-left: 50px;
     margin-right: 20px;
     margin-bottom: 30px;
 }
-
-.galleryNavBar {
-    width: 100%;
-}
-
-.gallery {
-    margin-top: 228px;
-}
-
-/*класове извън picnic.css*/
 
 .vgheaderwrapper {
     text-align:center;

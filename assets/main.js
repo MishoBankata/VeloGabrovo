@@ -1,22 +1,22 @@
-window.onscroll = function() {scrollFunction()};
-
+//MAKES THE SIDE NAVIGATION BAR APPEAR AND DISAPPEAR BASED ON SCROLL POSITION
 function scrollFunction() {
-
-    const buttons = document.querySelectorAll(`[id^="stt"]`);
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-	    buttons.forEach(button => {
+    "use strict";
+    var buttons = Array.from(document.getElementById("gallerySideNavBar").children);
+    
+    if (document.body.scrollTop > 124 || document.documentElement.scrollTop > 124) {
+        buttons.forEach(button => {
                 button.style.display = "block";
              });
-    } 
+    } 
 
     else {
-	buttons.forEach(button => {
+	   buttons.forEach(button => {
                 button.style.display = "none";
          });
-    }
+    }
 }
 		
-function topFunction() {
+function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
@@ -26,35 +26,38 @@ function show() {
     document.getElementById('btnID').style.display = "none";
 }
 
-function scrollIntoImage(id) {
-    switch(id.toString()) {
-        case 'toImage1':
-        case 'stt1':
-             //document.getElementById("image1").scrollIntoView();
-	     window.scrollTo(0, 580);
-             break;
-        case 'toImage2':
-        case 'stt2':
-             //document.getElementById("image2").scrollIntoView();
-	     window.scrollTo(0, 580+630);
-             break;
-        case 'toImage3':
-        case 'stt3':
-             //document.getElementById("image3").scrollIntoView();
-	     window.scrollTo(0, 580+630*2);
-             break;
-        case 'toImage4':
-        case 'stt4':
-             //document.getElementById("image4").scrollIntoView();
-	     window.scrollTo(0, 580+630*3);
-             break;
-        case 'toImage5':
-        case 'stt5':
-             //document.getElementById("image5").scrollIntoView();
-	     window.scrollTo(0, 580+630*4);
-             break;
+function scrollIntoImage(buttonContent) {
+    switch(buttonContent) {
+        case 'Главен маршрут':
+            window.scrollTo(0, 574);
+            break;
+        case 'Централен маршрут':
+	        window.scrollTo(0, 574+630);
+            break;
+        case 'Североизточен маршрут':
+	        window.scrollTo(0, 574+630*2);
+            break;
+        case 'Южен маршрут':
+	        window.scrollTo(0, 574+630*3);
+            break;
+        case 'Северозападен маршрут':
+	        window.scrollTo(0, 574+630*4);
+            break;
+        case 'Централен парк':
+            window.scrollTo(0, 574+630*5);
+            break;
         default:
-            //document.getElementById('image6').scrollIntoView();
-	    window.scrollTo(0, 580+630*5);  
+            alert("Error: Button's name not matching image's title.");
     }
 }
+
+function arrangeButtonsPosition() {
+    var buttons = Array.from(document.getElementById("gallerySideNavBar").children);
+    for (let i=0; i<buttons.length; i++) {
+        buttons[i].style.bottom = (240 - 40*i).toString() + "px";
+        buttons[i].style.right = "30px";
+    }
+}
+
+window.onscroll = function() {scrollFunction()};
+window.onload = arrangeButtonsPosition();
