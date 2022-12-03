@@ -48,3 +48,11 @@ nav {
 .vgparagraph p {
     font-size:24px;
 }
+
+.stt {
+    display: none; 
+    position: fixed;
+    background-color: red; 
+    bottom: 220px; 
+    right: 30px;
+}
