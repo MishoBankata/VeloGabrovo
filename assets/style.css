@@ -9,19 +9,28 @@ html {
 }
 body {
     font-family: Onest;
-    /*background-color: #94ffef;*/
 }
 header nav {
-    background-color: #5abfb0;
+    background-color: #14ba34;
+}
+
+nav .show ~ .menu {
+    transition: all 0.125s linear;
+}
+
+.burger {
+    font-size: 1.5em;
+    padding: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 /*класове извън picnic.css*/
 #gallerySideNavBar button {
     display: none; 
     position: fixed; 
-    background-color: red;
-    width: 18%;
-    text-align: right;
+    width: 250px;
+    text-align: center;
 }
 
 #galleryNavBar {
@@ -34,26 +43,56 @@ div.gallery {
 
 div.gallery img {
     width: auto;
-    height:600px;
+    height: 600px;
     margin-left: 50px;
     margin-right: 20px;
     margin-bottom: 30px;
 }
 
+.vgmenu, .vgtopscroll {
+    background-color: #19fa54;
+    color: black;
+}
+
+.vgsidescroll {
+    background-color: #fc1984;
+}
+
+.vgbutton{
+}
+
+.vgbutton:hover {
+    background-color: #f1ff19;
+    color: black;
+}
+
 .vgheaderwrapper {
-    text-align:center;
-    font-size:32px;
-    background-color:lightgray;/*ще е с този цвят временно*/
+    display: static;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    background-color: #000000bb;
+    z-index: 2;
+}
+
+.vgimageheader {
+    display: inline-block;
+    width: 100%;
+    height: 50vh;
+    background-image: url("images/placeholder.jpg");
+    background-size: cover;
+    background-position: 50% 10%;
+    z-index: 1;
 }
 
 .vgparagraph {
-    margin:auto;
-    width:80%;
-    text-align:center;
+    margin: auto;
+    width: 80%;
+    text-align: center;
 }
 
 .vgparagraph p {
-    font-size:24px;
+    font-size: 24px;
 }
 
 .stt {

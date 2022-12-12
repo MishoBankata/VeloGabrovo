@@ -1,0 +1,28 @@
+colorscheme:
+
+Main color (green):
+#19fa54
+Tints and shades of main color:
+#bffed0
+#6cfc92
+#04ba34
+#025618
+Grayscale:
+#ffffff
+#c0c0c0
+#808080
+#404040
+#000000
+Secondary colors (yellow and magenta):
+#f1ff19
+#fc1984
+Tints and shades of secondary colors:
+#fe8ec3
+#8b0243
+#f8ff90
+#879000
+Tertiary colors (tints and shades of orange and blue):
+#a7b9fc
+#05269f
+#ffdd90
+#906400
