@@ -66,15 +66,6 @@ div.gallery img {
     color: black;
 }
 
-.vgheaderwrapper {
-    display: static;
-    text-align: center;
-    font-size: 32px;
-    color: white;
-    background-color: #000000bb;
-    z-index: 2;
-}
-
 .vgimageheader {
     display: inline-block;
     width: 100%;
@@ -83,6 +74,17 @@ div.gallery img {
     background-size: cover;
     background-position: 50% 10%;
     z-index: 1;
+}
+
+.vgheaderwrapper {
+    height: 100%;
+    line-height: calc(50vh - 32px);
+    position: static;
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    background-color: #000000bb;
+    z-index: 2;
 }
 
 .vgparagraph {
