@@ -1,7 +1,7 @@
 //MAKES THE SIDE NAVIGATION BAR APPEAR AND DISAPPEAR BASED ON SCROLL POSITION
 function scrollFunction() {
     "use strict";
-    var buttons = Array.from(document.getElementById("gallerySideNavBar").children);
+    /*var buttons = Array.from(document.getElementById("gallerySideNavBar").children);
     
     if (document.body.scrollTop > 124 || document.documentElement.scrollTop > 124) {
         buttons.forEach(button => {
@@ -13,9 +13,17 @@ function scrollFunction() {
 	   buttons.forEach(button => {
                 button.style.display = "none";
          });
-    }
+    }*/
+	
+	var topButton = document.getElementById("top");
+	
+	if (document.body.scrollTop > 256 || document.documentElement.scrollTop > 256) {
+				topButton.style.display = "block";
+  			} else {
+				topButton.style.display = "none";
+  			}
 }
-		
+
 function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -27,27 +35,36 @@ function show() {
 }
 
 function scrollIntoImage(buttonContent) {
+	
+	let gm = document.getElementById("gm");
+	let cm = document.getElementById("cm");
+	let sim = document.getElementById("sim");
+	let um = document.getElementById("um");
+	let szm = document.getElementById("szm");
+	let cp = document.getElementById("cp");
+	
+	
     switch(buttonContent) {
         case 'Главен маршрут':
-            window.scrollTo(0, 574);
+            gm.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             break;
         case 'Централен маршрут':
-	        window.scrollTo(0, 574+630);
+	        cm.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             break;
         case 'Североизточен маршрут':
-	        window.scrollTo(0, 574+630*2);
+	        sim.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             break;
         case 'Южен маршрут':
-	        window.scrollTo(0, 574+630*3);
+	        um.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             break;
         case 'Северозападен маршрут':
-	        window.scrollTo(0, 574+630*4);
+	        szm.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             break;
         case 'Централен парк':
-            window.scrollTo(0, 574+630*5);
+            cp.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
             break;
         default:
-            alert("Error: Button's name not matching image's title.");
+            window.scrollTo(0, 0);
     }
 }
 
