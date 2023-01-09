@@ -122,6 +122,6 @@ header.news nav div a{
 	color: white;
 }
 
-#mapnav{
-	position: relative;
+.kartasnimka:hover{
+	z-index: 10001;
 }
