@@ -57,7 +57,7 @@
 			<span class="button stack vgbutton vgtopscroll" onclick="scrollIntoImage(this.textContent)">Централен парк</span>
         </div>
 		
-		<button onclick="scrollIntoImage(this.textContent)" id="top" title="Go to top" style="position: fixed; background-color: #025618; bottom: 20px; right: 30px;">^</button>
+		<button onclick="scrollIntoImage(this.textContent)" id="top" title="Go to top" style="position: fixed; background-color: #025618; bottom: 20px; right: 30px;">&uarr;</button>
         
 		<!--
         <div id="gallerySideNavBar">
@@ -69,51 +69,30 @@
             <button class="button vgbutton vgsidescroll" onclick="scrollIntoImage(this.textContent)">Централен парк</button>
         </div>
 		-->
+		
+		
+		<img id="cqlakarta" src="assets/images/VeloGabrovoBig.png" title="Всички маршрути" onclick="document.getElementById('modal_1').checked = true;">
 
-<!--
-			<div class="tabs six">
-  				<input id='tab-1' type='radio' name='tabgroupB' checked />
-  					<label class="button toggle" for="tab-1">Главен маршрут</label>
-  				<input id='tab-2' type='radio' name='tabgroupB'>
-  					<label class="button toggle" for="tab-2">Централен маршрут</label>
- 				<input id='tab-3' type='radio' name='tabgroupB'>
-  					<label class="button toggle" for="tab-3">Североизточен маршрут</label>
-				<input id='tab-4' type='radio' name='tabgroupB'>
-  					<label class="button toggle" for="tab-4">Южен маршрут</label>
-				<input id='tab-5' type='radio' name='tabgroupB'>
-  					<label class="button toggle" for="tab-5">Северозападен маршрут</label>
-				<input id='tab-6' type='radio' name='tabgroupB'>
-  					<label class="button toggle" for="tab-6">Централен Парк</label>
+		<div class="modal">
+			<input id="modal_1" type="checkbox" />
+			<label for="modal_1" class="overlay"></label>
+			<article style="width: 100%;">
+				<header>
+					<h3>Карта на всички маршрути</h3>
+					<label for="modal_1" class="close">&times;</label>
+				</header>
+				<section class="content">
+					<div class="click-zoom">
+						<label>
+							<input type="checkbox">
+							<img id="cqlakarta" src="assets/images/VeloGabrovoBig.png" title="Всички маршрути">
+						</label>
+					</div>
+				</section>
+			</article>
+		</div>
 
-  				<div class="row">
-
-    					<div>
-      						<img src="assets/glaven.png" style="width: 700px; height:auto">
-    					</div>
-    					<div>
-      						<img src="assets/centralen.png" style="width: 700px; height:auto">
-    					</div>
-					<div>
-      						<img src="assets/severoiztok.png" style="width: 700px; height:auto">
-    					</div>
-					<div>
-      						<img src="assets/ujen.png" style="width: 700px; height:auto">
-    					</div>
-					<div>
-      						<img src="assets/severozapad.png" style="width: 700px; height:auto">
-    					</div>
-					<div>
-      						<img src="assets/park.png" style="width: 700px; height:auto">
-    					</div>
-  				</div>
-			</div>
-
-<br><br>
-			<h2>Цялата мрежа</h2>
-			<div>
-				<img id="image1" src="assets/BLN.png" style="width: 675px; height:auto">
-				<img id="image" src="assets/BLNMap.png" style="width: 675px; height:auto">
-			</div> -->
+		
 		
         <div class="flex two-800 gallery">
 		  <img class="kartasnimka" id="gm" src="assets/images/glaven.png" title="Главен маршрут">

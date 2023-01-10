@@ -125,3 +125,37 @@ header.news nav div a{
 .kartasnimka:hover{
 	z-index: 10001;
 }
+
+#cqlakarta{
+	max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	
+	transition:transform 0.25s ease;
+}
+
+.modal .overlay~*{
+    border:0;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%) scale(0.1, 0.1);
+    z-index:1000000;
+    transition:all .3s
+}
+
+.click-zoom input[type=checkbox] {
+	display: none;
+}
+
+.click-zoom img {
+	transition: transform 0.25s ease;
+	cursor: zoom-in;
+}
+
+.click-zoom input[type=checkbox]:checked~img {
+	transform: scale(2);
+	cursor: zoom-out;
+}
