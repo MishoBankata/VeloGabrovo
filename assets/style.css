@@ -37,24 +37,6 @@ nav .show ~ .menu {
     width: 100%;
 }
 
-.gallery {
-    margin-top: 50px;
-}
-
-div.gallery img {
-    max-width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-	
-	transition:transform 0.25s ease;
-}
-
-div.gallery img:hover {
-	-webkit-transform:scale(1.5);
-    transform:scale(1.5);
-}
-
 .vgmenu, .vgtopscroll {
     background-color: #19fa54;
     color: black;
@@ -136,6 +118,16 @@ header.news nav div a{
 	transition:transform 0.25s ease;
 }
 
+.modal_img{
+	max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+	
+	transition:transform 0.25s ease;
+}
+
 .modal .overlay~*{
     border:0;
     position:fixed;
@@ -158,4 +150,15 @@ header.news nav div a{
 .click-zoom input[type=checkbox]:checked~img {
 	transform: scale(2);
 	cursor: zoom-out;
+}
+
+.gallery {
+    margin-top: 50px;
+}
+
+div.gallery img {
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+	margin-top: 30px;
 }
