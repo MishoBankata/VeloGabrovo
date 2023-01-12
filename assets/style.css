@@ -49,6 +49,11 @@ nav .show ~ .menu {
 .vgbutton{
 }
 
+.vgbuttonDark{
+	background-color: #14ba34;
+	color: black;
+}
+
 .vgbutton:hover {
     background-color: #f1ff19;
     color: black;
@@ -104,15 +109,6 @@ nav .show ~ .menu {
 
 .vgparagraph p {
     font-size: 24px;
-}
-
-header.news nav{
-    background-color: #a7b9fc;
-}
-
-header.news nav div a{
-    background-color: #05269f;
-	color: white;
 }
 
 .kartasnimka:hover{
