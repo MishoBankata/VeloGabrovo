@@ -2,11 +2,16 @@
 <html>
     <head>
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+        <link rel="preload" as="font"> 
         <title> Карта на маршрутите - ВелоГаброво </title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Вело-инфраструктура за град Габрово">
         <meta name="keywords" content="VeloGabrovo, Velo Gabrovo, Gabrovo, bike infrastructure, ВелоГаброво, Вело Габрово, Габрово, велосипедна инфраструктура">
+        <!--тези тагове нямат значение-->
+        <meta name="theme-color" content="#fc1984">
+        <link rel="apple-touch-icon" href="assets/favicon.png">
+        <!-- -->
         <link rel="stylesheet" href="assets/picnic.css">
 		<link rel="stylesheet" href="assets/style.css">
     </head>
@@ -16,7 +21,7 @@
 			<nav id="mapnav">
 				<a href="index.html" class="brand">
 					<span data-tooltip="към началото" class="tooltip-right">
-					    <img  class="logo" src="assets/images/VGLogoBlack.png" style="height:3em;">
+					    <img  class="logo" src="assets/images/VGLogoBlackSmall.png" alt="Начална страница" style="height:3em;">
                     </span>
 				</a>
 
@@ -60,7 +65,7 @@
 		
 		<button onclick="scrollIntoImage(this.textContent)" id="top" title="Go to top" style="position: fixed; background-color: #025618; bottom: 20px; right: 30px;">&uarr;</button>
         
-		<img id="cqlakarta" src="assets/images/VeloGabrovoSmall.png" title="Всички маршрути" onclick="document.getElementById('modal_fullMap').checked = true;">
+		<img id="cqlakarta" src="assets/images/VeloGabrovoSmall.png" alt="Карта на всички маршрути" title="Всички маршрути" onclick="document.getElementById('modal_fullMap').checked = true;">
 
 		<div class="modal">
 			<input id="modal_fullMap" type="checkbox" />
@@ -74,7 +79,7 @@
 					<div class="click-zoom">
 						<label>
 							<input type="checkbox">
-							<img class="modal_img" src="assets/images/VeloGabrovoBig.png" title="Всички маршрути">
+							<img class="modal_img" src="assets/images/VeloGabrovoBig.png" alt="Карта на всички маршрути" title="Всички маршрути">
 						</label>
 					</div>
 				</section>
@@ -93,7 +98,7 @@
 					<div class="click-zoom">
 						<label>
 							<input type="checkbox">
-							<img class="modal_img" src="assets/images/Main.png" title="Главен маршрут">
+							<img class="modal_img" src="assets/images/Main.png" alt="Карта на главен маршрут" title="Главен маршрут">
 						</label>
 					</div>
 				</section>
@@ -112,7 +117,7 @@
 					<div class="click-zoom">
 						<label>
 							<input type="checkbox">
-							<img class="modal_img" src="assets/images/Central.png" title="Централен маршрут">
+							<img class="modal_img" src="assets/images/Central.png" alt="Карта на централен маршрут" title="Централен маршрут">
 						</label>
 					</div>
 				</section>
@@ -131,7 +136,7 @@
 					<div class="click-zoom">
 						<label>
 							<input type="checkbox">
-							<img class="modal_img" src="assets/images/Northeast.png" title="Североизточен маршрут">
+							<img class="modal_img" src="assets/images/Northeast.png" alt="Карта на североизточен маршрут" title="Североизточен маршрут">
 						</label>
 					</div>
 				</section>
@@ -150,7 +155,7 @@
 					<div class="click-zoom">
 						<label>
 							<input type="checkbox">
-							<img class="modal_img" src="assets/images/South.png" title="Южен маршрут">
+							<img class="modal_img" src="assets/images/South.png" alt="Карта на южен маршрут" title="Южен маршрут">
 						</label>
 					</div>
 				</section>
@@ -169,7 +174,7 @@
 					<div class="click-zoom">
 						<label>
 							<input type="checkbox">
-							<img class="modal_img" src="assets/images/Northwest.png" title="Северозападен маршрут">
+							<img class="modal_img" src="assets/images/Northwest.png" alt="Карта на северозападен маршрут" title="Северозападен маршрут">
 						</label>
 					</div>
 				</section>
@@ -188,7 +193,7 @@
 					<div class="click-zoom">
 						<label>
 							<input type="checkbox">
-							<img class="modal_img" src="assets/images/Park.png" title="Главен маршрут">
+							<img class="modal_img" src="assets/images/Park.png" alt="Карта на маршрут Централен парк" title="Главен маршрут">
 						</label>
 					</div>
 				</section>
@@ -198,7 +203,7 @@
 		
         <div class="flex two-800 gallery">
 		  <div class="second">
-			<img class="kartasnimka stack" id="gm" src="assets/images/Main.png" title="Главен маршрут" onclick="document.getElementById('modal_mainMap').checked = true;">
+			<img class="kartasnimka stack" id="gm" src="assets/images/Main.png" alt="Карта на главен маршрут" title="Главен маршрут" onclick="document.getElementById('modal_mainMap').checked = true;">
 			<a class="button stack" onclick="document.getElementById('modal_mainMap').checked = true;">Главен маршрут</a>
 		  </div>
 		  <p>Главният маршрут започва от пл. Марсел де Бископ, продължава по ул. Васил Левски и ул. Щастие, минава покрай Домът на хумора и сатира и продължава от двете страни на река Янтра по ул. Аврам Гачев и ул. Дунав.
@@ -207,7 +212,7 @@
 Този маршрут е най-важен заради своето положение и свързва другите маршрути.</p>
 		  
 		  <div class="second">
-			<img class="kartasnimka stack" id="cm" src="assets/images/Central.png" title="Централен маршрут" onclick="document.getElementById('modal_centralMap').checked = true;">
+			<img class="kartasnimka stack" id="cm" src="assets/images/Central.png" alt="Карта на централен маршрут" title="Централен маршрут" onclick="document.getElementById('modal_centralMap').checked = true;">
 			<a class="button stack" onclick="document.getElementById('modal_centralMap').checked = true;">Централен маршрут</a>
 		  </div>
 		  <p>Централният маршрут се възползва от широката пешеходна зона на ул. Априловска, централния парк "Мечето" и пл. Възраждане, където множество важни сгради са разположени - сградата на община Габрово, Домът на културата, библиотеката "Априлов-Палаузов", театър "Рачо Стоянов", Априловска Гимназия и музея на образованието.
@@ -219,18 +224,18 @@
 Този маршрут минава покрай множество обществени сгради, паметници на културата и паркове.</p>
 		  
 		  <div class="second">
-			<img class="kartasnimka stack" id="sim" src="assets/images/Northeast.png" title="Североизточен маршрут" onclick="document.getElementById('modal_northEastMap').checked = true;">
+			<img class="kartasnimka stack" id="sim" src="assets/images/Northeast.png" alt="Карта на североизточен маршрут" title="Североизточен маршрут" onclick="document.getElementById('modal_northEastMap').checked = true;">
 			<a class="button stack" onclick="document.getElementById('modal_northEastMap').checked = true;">Североизточен маршрут</a>
 		  </div>
 		  <p>От пл. Марсел де Бископ, пред ЖП гарата, североизточния маршрут минава по ул. Ген. Николов.
-От кръстовището с ул. Ген. Николов, ул. Александър Стамболиъски и ул. Антим I-ви се разклонява велоалея, която достига Северната промишлена зона.
+От кръстовището с ул. Ген. Николов, ул. Александър Стамболийски и ул. Антим I-ви се разклонява велоалея, която достига Северната промишлена зона.
 Главната част от маршрута продължава по ул. Александър Стамболийски до пл. Белорусия.
 Маршрутът се прехвърля от другата страна на река Янтра по пешеходния мост изграден над нея.
 Велоалеята продължава успоредно на ул. Орловска и река Янтра, а после само покрай реката, където липсва всякакви пътища или други препядствия.
 Маршрутът завършва на пл. Орловец до Спортната зала.</p>
 		
 		  <div class="second">
-			<img class="kartasnimka stack" id="um" src="assets/images/South.png" title="Южен маршрут" onclick="document.getElementById('modal_southMap').checked = true;">
+			<img class="kartasnimka stack" id="um" src="assets/images/South.png" alt="Карта на южен маршрут" title="Южен маршрут" onclick="document.getElementById('modal_southMap').checked = true;">
 			<a class="button stack" onclick="document.getElementById('modal_southMap').checked = true;">Южен маршрут</a>
 		  </div>
 		  <p>От Шиваров мост, южният маршрут минава покрай кръговото кръстовище и продължава право по бул. 3-ти март.
@@ -240,7 +245,7 @@
 В случай, че колодрумът бъде реставриран, той ще бъде свързан с мрежата от велоалеи.</p>
 		
 		  <div class="second">
-			<img class="kartasnimka stack" id="szm" src="assets/images/Northwest.png" title="Северозападен маршрут" onclick="document.getElementById('modal_northwestMap').checked = true;">
+			<img class="kartasnimka stack" id="szm" src="assets/images/Northwest.png" alt="Карта на северозападен маршрут" title="Северозападен маршрут" onclick="document.getElementById('modal_northwestMap').checked = true;">
 			<a class="button stack" onclick="document.getElementById('modal_northwestMap').checked = true;">Северозападен маршрут</a>
 		  </div>
 		  <p>Северозападният маршрут започва от главния маршрут, от ул. Крали Марко.
@@ -255,7 +260,7 @@
 Маршрутът завършва при релсовия прелез на ул. Георги Кирков, свързвайки се с североизточния маршрут.</p>
 		
 		  <div class="second">
-			<img class="kartasnimka stack" id="cp" src="assets/images/Park.png" title="Централен парк" onclick="document.getElementById('modal_parkMap').checked = true;">
+			<img class="kartasnimka stack" id="cp" src="assets/images/Park.png" alt="Карта на маршрут Централен парк" title="Централен парк" onclick="document.getElementById('modal_parkMap').checked = true;">
 			<a class="button stack" onclick="document.getElementById('modal_parkMap').checked = true;">Централен парк</a>
 		  </div>
 		  <p>От кръговото кръстовище на ул. Чардафон и ул. Баждар, маршрутът "Централен парк" се изкачва до ул. Алеко Константинов.

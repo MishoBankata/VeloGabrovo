@@ -70,7 +70,7 @@ nav .show ~ .menu {
 
 .vgimageheader {
     height: 75vh;
-    background-image: url("images/placeholder.jpg");
+    background-image: url("images/homepage.webp");
 }
 
 .vgimageheaderMap {
@@ -94,10 +94,11 @@ nav .show ~ .menu {
 }
 
 .vgmainpage {
-    line-height: calc(100vh - 32px);
+    line-height: calc(100vh);
 }
 
 .vgmainpage img {
+    margin-top:64px;
     width:min(600px, 90%);
 }
 

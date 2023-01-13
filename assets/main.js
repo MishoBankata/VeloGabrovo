@@ -68,13 +68,14 @@ function scrollIntoImage(buttonContent) {
     }
 }
 
-function arrangeButtonsPosition() {
+//Нямам идея какво правят тези функции, затова няма още да ги трия.
+/*function arrangeButtonsPosition() {
     var buttons = Array.from(document.getElementById("gallerySideNavBar").children);
     for (let i=0; i<buttons.length; i++) {
         buttons[i].style.bottom = (240 - 40*i).toString() + "px";
         buttons[i].style.right = "30px";
     }
-}
+}*/
 
 window.onscroll = function() {scrollFunction()};
-window.onload = arrangeButtonsPosition();
+//window.onload = arrangeButtonsPosition();
