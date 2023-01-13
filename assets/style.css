@@ -79,7 +79,7 @@ nav .show ~ .menu {
 }
 
 .vgimageheaderNews {
-    background-image: url("images/placeholder.jpg");
+    background-image: url("images/homepage.webp");
 }
 
 .vgheaderwrapper {
@@ -111,6 +111,27 @@ nav .show ~ .menu {
 .vgparagraph p {
     font-size: 24px;
 }
+
+/* за footer, не изглежда добре на страницата за новини
+.vgfooter {
+    float:bottom;
+    height: 32px;
+    background-color: #404040;
+    color: #808080;
+}
+
+.vgfooter span {
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.vgfooter a {
+    float: right;
+    margin-left:4px;
+    margin-right:4px;
+}
+*/
 
 .kartasnimka:hover{
 	z-index: 10001;
