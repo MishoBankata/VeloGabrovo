@@ -18,6 +18,39 @@ nav .show ~ .menu {
     transition: all 0.125s linear;
 }
 
+@media only screen and (max-width:560px){
+    .vgmapwrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #cqlakarta {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:560px) and (max-width:800px){
+    .vgmapwrapper {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #cqlakarta {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:800px){
+    .vgmapwrapper {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #cqlakarta {
+        width: 40%;
+    }
+}
+
 .burger {
     font-size: 1.5em;
     padding: 0;
@@ -42,11 +75,12 @@ nav .show ~ .menu {
     color: black;
 }
 
-.vgsidescroll {
-    background-color: #fc1984;
+.vgredirect {
+    font-size: 24px;
 }
 
-.vgbutton{
+.vgstack{
+    background-color: #fc1984;
 }
 
 .vgbuttonDark{
@@ -102,6 +136,10 @@ nav .show ~ .menu {
     width:min(600px, 90%);
 }
 
+.vgcentered {
+    text-align: center;
+}
+
 .vgparagraph {
     margin: auto;
     width: 80%;
@@ -110,6 +148,21 @@ nav .show ~ .menu {
 
 .vgparagraph p {
     font-size: 24px;
+}
+
+.vgdiv {
+    background-color: #bfbfbf;
+	padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.vgmapwrapper {
+}
+
+.vgdescriptionwrapper  {
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 /* за footer, не изглежда добре на страницата за новини
@@ -133,26 +186,30 @@ nav .show ~ .menu {
 }
 */
 
+#top{
+    z-index:1;
+}
+
+.kartasmimka {
+}
+
 .kartasnimka:hover{
 	z-index: 10001;
 }
 
-#cqlakarta{
-	max-width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-	margin-top: 30px;
+#cqlakarta {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
     margin-bottom: 30px;
-	
-	transition:transform 0.25s ease;
+
+    transition:transform 0.25s ease;
 }
 
 .modal_img{
 	max-width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-	margin-top: 30px;
-    margin-bottom: 30px;
 	
 	transition:transform 0.25s ease;
 }
