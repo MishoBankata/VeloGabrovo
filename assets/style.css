@@ -131,9 +131,18 @@ nav .show ~ .menu {
     line-height: calc(100vh);
 }
 
-.vgmainpage img {
-    margin-top:64px;
-    width:min(600px, 90%);
+@media only screen and (min-height:720px){
+    .vgmainpage img {
+        margin-top: 64px;
+        width: min(600px, 90%);
+    }
+}
+
+@media only screen and (max-height:720px){
+    .vgmainpage img {
+        margin-top: 64px;
+        width: min(300px, 45%);
+    }
 }
 
 .vgcentered {
