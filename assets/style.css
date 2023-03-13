@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Onest;
-    src: url(fonts/OnestRegular1602-hint.woff);
+    font-family: Libra Sans Modern;
+    src: url(fonts/LibraSansModern.woff);
     font-style: normal;
 }
 
@@ -8,7 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: Onest;
+    font-family: Libra Sans Modern;
 }
 header nav {
     background-color: #14ba34;
