@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Libra Sans Modern;
     src: url(fonts/LibraSansModern.woff);
@@ -9,7 +10,9 @@ html {
 }
 body {
     font-family: Libra Sans Modern;
+    background-color: white;
 }
+/**/
 header nav {
     background-color: #14ba34;
 }
@@ -91,6 +94,10 @@ nav .show ~ .menu {
 .vgbutton:hover {
     background-color: #f1ff19;
     color: black;
+}
+
+nav, .vgbutton, .vgbutton:hover, #top, .kartasnimka {
+    box-shadow: 0px 0px 20px -10px, 0px 0px 20px -10px white inset, 0px 0px 1px -1px inset !important;
 }
 
 .vgimageheader, .vgimageheaderMap, .vgimageheaderNews {
