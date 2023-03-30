@@ -12,6 +12,9 @@ body {
     font-family: Libra Sans Modern;
     background-color: white;
 }
+* {
+    box-sizing: border-box;
+}
 /**/
 header nav {
     background-color: #14ba34;
@@ -22,34 +25,64 @@ nav .show ~ .menu {
 }
 
 @media only screen and (max-width:560px){
+    .vgdiv {
+        padding-bottom: 30px;
+    }
+    
     .vgmapwrapper {
         padding-left: 5%;
         padding-right: 5%;
     }
 
     #cqlakarta {
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 30px;
         width: 80%;
     }
 }
 
 @media only screen and (min-width:560px) and (max-width:800px){
+    .vgdiv {
+        padding-bottom: 30px;
+    }
+    
     .vgmapwrapper {
         padding-left: 10%;
         padding-right: 10%;
     }
 
     #cqlakarta {
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 30px;
         width: 80%;
     }
 }
 
 @media only screen and (min-width:800px){
+    .vgdiv {
+        padding-bottom: 30px;
+    }
+    
+    #galerryNavBar {
+        display: block;
+    }
+
     .vgmapwrapper {
         padding-left: 20%;
         padding-right: 20%;
     }
 
+    #fullmapdiv {
+    }
     #cqlakarta {
+        display: block;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 30px;
         width: 40%;
     }
 }
@@ -96,7 +129,7 @@ nav .show ~ .menu {
     color: black;
 }
 
-nav, .vgbutton, .vgbutton:hover, #top, .kartasnimka {
+nav, .vgbutton, .vgbutton:hover, #top, .kartasnimka, #cqlakarta {
     box-shadow: 0px 0px 20px -10px, 0px 0px 20px -10px white inset, 0px 0px 1px -1px inset !important;
 }
 
@@ -167,9 +200,7 @@ nav, .vgbutton, .vgbutton:hover, #top, .kartasnimka {
 }
 
 .vgdiv {
-    background-color: #bfbfbf;
-	padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: #e1fee8;
 }
 
 .vgmapwrapper {
@@ -214,11 +245,6 @@ nav, .vgbutton, .vgbutton:hover, #top, .kartasnimka {
 }
 
 #cqlakarta {
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
     transition:transform 0.25s ease;
 }
 
